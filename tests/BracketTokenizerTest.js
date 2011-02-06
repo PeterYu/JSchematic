@@ -1,4 +1,4 @@
-testCase(new function() {
+testCase('BracketTokenizerTest', new function() {
 
 	var tokenizer;
 

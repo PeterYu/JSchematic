@@ -1,4 +1,4 @@
-testCase(new function() {
+testCase('literal_form_test', new function() {
 	var scm = new Scm();
 	this.numeral_form = function() {
 	    assertEquals(1, scm.eval('1'))

@@ -1,4 +1,4 @@
-testCase(new function() {
+testCase('ASTParser_nested_form_tests', new function() {
 	var parser = new ASTParser();
 	
 	this.nested_outer_operator = function() {

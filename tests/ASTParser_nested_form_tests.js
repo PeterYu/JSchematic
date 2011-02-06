@@ -8,7 +8,7 @@ testCase(new function() {
 	
 	this.nested_outer_operand = function() {
 	    var root = parser.parse('(- 3 (+ 1 2))');
-	    assertEquals(3, root.form.args[0].func);
+	    assertEquals(3, root.form.args[0]);
 	};
 	
 	this.nested_outer_inner_form_operator = function() {
@@ -18,11 +18,11 @@ testCase(new function() {
 	
 	this.nested_outer_inner_form_left_operand = function() {
 	    var root = parser.parse('(- 3 (+ 1 2))');
-	    assertEquals(1, root.form.args[1].args[0].func);
+	    assertEquals(1, root.form.args[1].args[0]);
 	};
 	
 	this.nested_outer_inner_form_right_operand = function() {
 	    var root = parser.parse('(- 3 (+ 1 2))');
-	    assertEquals(2, root.form.args[1].args[1].func);
+	    assertEquals(2, root.form.args[1].args[1]);
 	};
     });
